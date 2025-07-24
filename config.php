@@ -1,16 +1,18 @@
 <?php
-    $servername = "localhost";  	// Server name or IP address
-    $username = "root";     		// MySQL username
-    $password = "";     			// MySQL password
-    $dbname = "computer_store";	  	// Database name
+// Database configuration
+define('DB_HOST', 'localhost');
+define('DB_USER', 'root');
+define('DB_PASS', '');
+define('DB_NAME', 'computer_store');
 
-    // Create connection
-    $conn = mysqli_connect($servername, $username, $password, $dbname);
-
-    // Check connection
-    if (!$conn) {
-        die("Connection failed:" . mysqli_connect_error());
-    }
+// Create connection
+try {
+    $pdo = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_NAME, DB_USER, DB_PASS);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+} catch(PDOException $e) {
+    die("Connection failed: " . $e->getMessage());
+}
 session_start();
 
 
