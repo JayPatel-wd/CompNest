@@ -201,7 +201,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                             <div class="card-body">
                                 <?php foreach ($cart_items as $item): ?>
                                 <div class="d-flex justify-content-between mb-2">
-                                    <span><?php echo htmlspecialchars($item['name']); ?> × <?php echo $item['quantity']; ?></span>
+                                    <span><?php echo htmlspecialchars($item['name']); ?> <?php echo $item['quantity']; ?></span>
                                     <span><?php echo formatPrice($item['price'] * $item['quantity']); ?></span>
                                 </div>
                                 <?php endforeach; ?>
