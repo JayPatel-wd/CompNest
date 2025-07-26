@@ -68,11 +68,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         <div class="text-center mt-3">
                             <p>Don't have an account? <a href="register.php">Register here</a></p>
                         </div>
-                        
-                        <div class="alert alert-info mt-3">
-                            <strong>Demo Account:</strong><br>
-                            User: user@example.com / user123
-                        </div>
                     </div>
                 </div>
             </div>
