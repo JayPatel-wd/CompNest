@@ -1,4 +1,5 @@
-# CompNest – Online Computer Store
+# <img width="50" height="50" alt="logo" src="https://github.com/user-attachments/assets/3fa3a574-46c8-4bb2-a7be-f12fe2a2b1dc"/> CompNest -Online Computer Store
+
 
 CompNest is a fully functional online computer store built with PHP, MySQL, HTML5, CSS/SCSS, JavaScript, and integrated with PayPal for secure payments. It includes both user and admin modules for managing products, orders, and user accounts.
 
