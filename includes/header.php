@@ -111,7 +111,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn btn-outline-light btn-sm ms-2" href="register.php">
+                        <a class="nav-link" href="register.php">
                             <i class="bi bi-person-plus"></i> Register
                         </a>
                     </li>
